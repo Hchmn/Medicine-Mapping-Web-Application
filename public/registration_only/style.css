@@ -1,0 +1,58 @@
+.topnav-centered small {
+float: none;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+.btn-box{
+  width: 100%;
+  margin-bottom: 30px;
+  text-align: center;
+}
+form button{
+  width: 110px;
+  height: 35px;
+  margin 0 10px;
+  background: #0bccff;
+  border-radius: 25px;
+  border: 0;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+}
+.tab {
+  display: none;
+}
+#prevBtn {
+  background-color: #bbbbbb;
+}
+button:hover {
+opacity: 0.8;
+}
+input.invalid {
+background-color: #ffdddd;
+}
+select.invalid{
+background-color: #ffdddd;
+}
+.step {
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbbbbb;
+border: none;
+border-radius: 50%;
+display: inline-block;
+opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+background-color: #04AA6D;
+}

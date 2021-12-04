@@ -1,0 +1,35 @@
+Flex(
+        direction: Axis.horizontal,
+        children: [
+          Expanded(
+            flex: 1,
+            child: CustomWidget.outlinedButton(
+              onPressed: () {
+                print("upload image..");
+              },
+              child: Icon(Icons.image),
+              backgroundColor: Colors.transparent,
+              side: BorderSide(
+                color: Colors.white,
+              ),
+            ),
+          ),
+          Expanded(
+            flex: 5,
+            child: CustomWidget.textField(
+              controller: _chatMessageController,
+              labelText: "write a message",
+            ),
+          ),
+          Expanded(
+            child: CustomWidget.outlinedButton(
+              onPressed: () {
+                print("send...");
+              },
+              child: Icon(Icons.send),
+              backgroundColor: Colors.white,
+              side: BorderSide(color: Colors.white),
+            ),
+          ),
+        ],
+      )

@@ -1,0 +1,147 @@
+.topnav-centered a {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* .searchbar{
+
+   margin-bottom: auto;
+   margin-top: auto;
+   height: 60px;
+   background-color: white;
+   border-radius: 30px;
+   padding: 10px;
+   } */
+
+  .search_input{
+   color: black;
+   border: 0;
+   margin-bottom: auto;
+   margin-top: auto;
+   outline: 0;
+   background: white;
+   width: 55px;
+   border-radius: 30px;
+   line-height: 40px;
+   transition: width 0.4s linear;
+
+
+   }
+
+   .searchbar:hover > .search_input{
+   padding: 0 10px;
+   width: 200px;
+   caret-color:red;
+   transition: width 0.4s linear;
+   }
+
+   .searchbar:hover > .search_icon{
+   background: white;
+   color: #54BEFF;
+   }
+
+
+#myInput {
+  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+#myTable {
+  border-collapse: collapse; /* Collapse borders */
+  width: 100%; /* Full-width */
+  border: 1px solid #ddd; /* Add a grey border */
+  font-size: 18px; /* Increase font-size */
+}
+
+#myTable th {
+  text-align: left; /* Left-align text */
+  padding: 18px; /* Add padding */
+  /* position: sticky;
+  top: 0.2px; */
+  background-color: #f1f1f1;
+}
+
+#myTable td {
+  text-align: left; /* Left-align text */
+  padding: 18px; /* Add padding */
+  /* position: sticky; */
+}
+#myTable tr {
+  /* Add a bottom border to all table rows */
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  /* Add a grey background color to the table header and on hover */
+  background-color: #f1f1f1;
+}
+
+.switch {
+ position: relative;
+ display: inline-block;
+ width: 60px;
+ height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+ opacity: 0;
+ width: 0;
+ height: 0;
+}
+
+/* The slider */
+.slider {
+ position: absolute;
+ cursor: pointer;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background-color: #ccc;
+ -webkit-transition: .4s;
+ transition: .4s;
+}
+
+.slider:before {
+ position: absolute;
+ content: "";
+ height: 26px;
+ width: 26px;
+ left: 4px;
+ bottom: 4px;
+ background-color: white;
+ -webkit-transition: .4s;
+ transition: .4s;
+}
+
+input:checked + .slider {
+ background-color: #2196F3;
+}
+
+input:focus + .slider {
+ box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+ -webkit-transform: translateX(26px);
+ -ms-transform: translateX(26px);
+ transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+ border-radius: 34px;
+}
+.slider.round:before {
+ border-radius: 50%;
+}

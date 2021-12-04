@@ -1,0 +1,38 @@
+.myForm {
+  min-width: 500px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  font-size: 2.5rem
+  }
+  @media (max-width: 500px) {
+  .myForm {
+    min-width: 90%;
+  }
+  }
+  .resendAuthentication {
+    min-width: 500px;
+    position: absolute;
+    text-align: center;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    font-size: 2.5rem
+    }
+    @media (max-width: 500px) {
+    .resendAuthentication {
+      min-width: 90%;
+    }
+    }
+  input::placeholder{
+    text-align: center;
+  }
+  .topnav-centered a {
+      float: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
